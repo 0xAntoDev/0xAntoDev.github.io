@@ -1,0 +1,130 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+header {
+    background-color: #0D0D0D;
+    border-bottom: 3px solid #F5F5F5;
+}
+
+.nav_item>a {
+    color: #F5F5F5;
+}
+
+.welcome_section {
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.paint_kit {
+    width: 80%;
+    align-self: center;
+}
+
+.recent_project_section {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.element_welcome_section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.recent_project_section>h2 {
+    align-self: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container_cover {
+    width: 100%;
+    max-width: 928px;
+    max-height: 523px;
+    aspect-ratio: 16 / 9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    border: 3px solid #0D0D0D;
+    filter: drop-shadow(5px 5px 0px #0D0D0D);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card_piv>.container_cover {
+    background-image: url('/img/cover_piv.jpg');
+}
+
+.card_discobuzz>.container_cover {
+    background-image: url('/img/cover_discobuzz.jpg');
+}
+
+.card_piv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card_discobuzz {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.legend>p>span {
+    font-family: Sora;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width:768px) {
+    .welcome_section {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 8% 8%;
+    }
+
+
+    .paint_kit {
+        width: 50%;
+    }
+
+    .recent_project_section {
+        justify-content: center;
+        gap: 2.5rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card_piv,
+    .card_discobuzz {
+        width: 40%;
+    }
+}
+
+#project_section {
+    transition: ease-in 200ms;
+}

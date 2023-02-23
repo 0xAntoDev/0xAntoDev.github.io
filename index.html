@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+
+</head>
+
+<body>
+    <header class="sticky">
+        <nav>
+            <a href="/index.html">
+                <img src="/img/white_vector_Antoine_leguay.svg" alt="">
+            </a>
+            <div class="nav_item">
+                <a href="/index.html">Accueil</a>
+                <a href="/all_my_projects.html">Mes projets</a>
+                <a href="/about.html">À propos</a>
+            </div>
+            <div class="burger_menu" id="burgerMenu">
+                <img id="iconBurger" src="icon/white_burger_menu.svg" alt="">
+                <img class="display_none" id="iconCross" src="icon/Cross.svg" alt="">
+            </div>
+        </nav>
+    </header>
+    <div class="mobile_burger_menu display_none" id="mobileBurgerMenu">
+        <a href="index.html" class="headline">ACCUEIL</a>
+        <a href="my_projet.html" class="headline">MES PROJETS</a>
+        <a href="about.html" class="headline">À PROPOS</a>
+    </div>
+    <main>
+        <section class="welcome_section">
+            <img class="paint_kit" src="/img/paint-kit-dynamic-premium.png" alt="">
+            <div class="element_welcome_section">
+
+                <h1>Bienvenue sur mon portfolio</h1>
+                <p>Lorem ipsum dolor sit amet consectetur. Vitae est enim vivamus proin pretium cursus id fermentum.
+                    Ornare ac laoreet purus urna sit ut turpis.</p>
+                <a class="dark_ghost_button" href="#project_section">
+                    Défilement vers le bas
+                    <img src="/icon/Chevron_Down.svg" alt=""></a>
+            </div>
+        </section>
+        <!-- -------------------------- -->
+        <section class="recent_project_section" id="project_section">
+            <h2>Mes projets récents</h2>
+            <div class="cards">
+                <div class="card_piv">
+
+                    <div class="container_cover"></div> <!-- ICI IMAGE EN BACKGROUND DE LA DIV -->
+                    <div class="legend">
+                        <p>Présentation d'dentité visuelle
+                        </p>
+                        <p>
+                            <span>Personal Branding</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- -------------------------- -->
+                <!-- -------------------------- -->
+                <div class="card_discobuzz">
+                    <div class="container_cover"></div> <!-- ICI IMAGE EN BACKGROUND DE LA DIV -->
+                    <div class="legend">
+                        <p>UI & UX</p>
+                        <p>
+                            <span>Discobuzz</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- -------------------------- -->
+                <!-- -------------------------- -->
+                <div class="card_piv">
+                    <div class="container_cover"></div> <!-- ICI IMAGE EN BACKGROUND DE LA DIV -->
+                    <div class="legend">
+                        <p>UI & UX</p>
+                        <p>
+                            <span>Discobuzz</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- -------------------------- -->
+                <!-- -------------------------- -->
+                <div class="card_piv">
+                    <div class="container_cover"></div> <!-- ICI IMAGE EN BACKGROUND DE LA DIV -->
+                    <div class="legend">
+                        <p>UI & UX</p>
+                        <p>
+                            <span>Discobuzz</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------------------- -->
+            <a class="primary_button" href="/all_my_projects.html">
+                Voir plus
+                <img src="/icon/Arrow_Left_MD.svg" alt=""></a>
+        </section>
+        <a class="ghost_button back_to_the_top" href="">
+            <img src="./icon/Black_Chevron_top.svg" alt=""></a>
+    </main>
+    <footer>
+        <div class="footer_icons">
+            <a href="https://dribbble.com/"><img src="/icon/dribbble.svg" alt=""></a>
+            <a href="https://www.behance.net/toinoo"><img src="/icon/behance.svg" alt=""></a>
+            <a href="https://github.com/0xAntoDev"><img src="/icon/github.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/antoine-leguay-51899023a/"><img src="/icon/linkedin.svg" alt=""></a>
+            <a href="https://twitter.com/JustToinoo"><img src="/icon/twitter.svg" alt=""></a>
+            <a href="https://instagram.com/JustToinoo"><img src="/icon/instagram.svg" alt=""></a>
+        </div>
+        <p class="footer_text_layer">© 2023 Antoine LEGUAY. All Rights Reserved.</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

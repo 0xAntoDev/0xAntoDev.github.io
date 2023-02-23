@@ -1,0 +1,219 @@
+/* Paramètre de base  */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-weight: normal;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Sora';
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #F5F5F5;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.no_overflow {
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+header {
+    width: 100%;
+    padding: 2rem;
+    border-bottom: 3px solid #0D0D0D;
+    background-color: #F5F5F5;
+    z-index: 100;
+}
+
+.sticky {
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 0;
+}
+
+.mobile_burger_menu {
+    position: fixed;
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger_menu {
+    cursor: pointer;
+}
+
+.display_none {
+    display: none;
+}
+
+.headline {
+    font-size: 2rem;
+    font-family: 'Sora';
+}
+
+main {
+    flex: 1;
+}
+
+/* ---- Barre de navigation */
+/* ------------------------ */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_item {
+    display: none;
+    /*Pour cacher l'élement*/
+}
+
+.nav_item>a {
+    display: block;
+    font-size: 1rem;
+    color: #0D0D0D;
+    text-decoration: none;
+    transition: all 300ms ease-out;
+    font-family: Sora;
+}
+
+.nav_item>a:hover {
+    /* Blue */
+    color: #0064FF;
+    transition: all 300ms ease-in;
+}
+
+
+/* Media Queries pour la nav bar */
+/* ----------------------------- */
+
+@media screen and (min-width: 768px) {
+    .nav_item {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .burger_menu {
+        display: none;
+    }
+}
+
+/* --- Primary_Button */
+/* ---------------- */
+
+.primary_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #0D0D0D;
+    box-shadow: 5px 5px 0px #0D0D0D;
+    border-radius: 9px;
+    background-color: #F5F5F5;
+    gap: 0.8rem;
+    transition: 0.3s ease-in-out;
+}
+
+.primary_button:hover {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+}
+
+/* --- Ghost_Button */
+/* ---------------- */
+
+.ghost_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #0D0D0D;
+    box-shadow: 5px 5px 0px #F5F5F5, 5px 5px 0 1px #0D0D0D;
+    border-radius: 9px;
+    gap: 0.8rem;
+    transition: 0.3s ease-in-out;
+}
+
+.ghost_button:hover {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+}
+
+.dark_ghost_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #F5F5F5;
+    box-shadow: 5px 5px 0px #0D0D0D, 5px 5px 0 1px #F5F5F5;
+    border-radius: 9px;
+    gap: 0.8rem;
+    transition: 0.3s ease-in-out;
+}
+
+.dark_ghost_button:hover {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+}
+
+.back_to_the_top {
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+}
+
+/* ---- Footer */
+/* ----------- */
+
+footer {
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+    font-size: 0.8rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.footer_icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer_icons>a>img:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2) rotate(360deg);
+}

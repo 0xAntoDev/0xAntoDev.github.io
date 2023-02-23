@@ -1,0 +1,74 @@
+main {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+main>h1 {
+    align-self: center;
+}
+
+.recent_project_section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container_cover {
+    width: 100%;
+    max-width: 928px;
+    max-height: 523px;
+    aspect-ratio: 16 / 9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    border: 3px solid #0D0D0D;
+    filter: drop-shadow(5px 5px 0px #0D0D0D);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card_piv>.container_cover {
+    background-image: url('/img/cover_piv.jpg');
+}
+
+.card_discobuzz>.container_cover {
+    background-image: url('/img/cover_discobuzz.jpg');
+}
+
+.card_piv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card_discobuzz {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+p>span {
+    font-family: Sora;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width:768px) {
+    .recent_project_section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+
+    .card_piv,
+    .card_discobuzz {
+        width: 40%;
+
+    }
+}
