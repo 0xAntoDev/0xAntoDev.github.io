@@ -67,6 +67,12 @@ header {
     gap: 4rem;
     justify-content: center;
     align-items: center;
+    ;
+}
+
+.mobile_burger_menu>a:hover {
+    color: #0064FF;
+    transition: all 300ms ease-in;
 }
 
 .burger_menu {
@@ -114,6 +120,39 @@ nav {
     transition: all 300ms ease-in;
 }
 
+.icon_mobile {
+    font-size: 2rem;
+    transition: 0.5s ease-in-out;
+}
+
+.icon_mobile:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2) rotate(180deg);
+}
+
+.white_icon {
+    color: #F5F5F5;
+}
+
+.black_icon {
+    color: #0D0D0D;
+}
+
+.animation_link {
+    display: inline-block;
+}
+
+.animation_link:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #0064FF;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.animation_link:hover:after {
+    transform: scaleX(1);
+}
 
 /* Media Queries pour la nav bar */
 /* ----------------------------- */
@@ -150,6 +189,10 @@ nav {
     transform: translate(5px, 5px);
 }
 
+.primary_button>svg {
+    font-size: 1.5rem;
+}
+
 /* --- Ghost_Button */
 /* ---------------- */
 
@@ -170,6 +213,10 @@ nav {
     transform: translate(5px, 5px);
 }
 
+.ghost_button>svg {
+    font-size: 1.5rem;
+}
+
 .dark_ghost_button {
     display: flex;
     justify-content: center;
@@ -185,6 +232,10 @@ nav {
 .dark_ghost_button:hover {
     box-shadow: none;
     transform: translate(5px, 5px);
+}
+
+.dark_ghost_button>svg {
+    font-size: 1.5rem;
 }
 
 .back_to_the_top {
@@ -213,7 +264,11 @@ footer {
     gap: 1rem;
 }
 
-.footer_icons>a>img:hover {
+.footer_icons>a>svg {
+    font-size: 2rem;
+}
+
+.footer_icons>a>svg:hover {
     transition: 0.5s ease-in-out;
     transform: scale(1.2) rotate(360deg);
 }

@@ -11,36 +11,41 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/global.css">
-    <link rel="stylesheet" href="/CSS/index.css">
-
+    <link rel="stylesheet" href="./CSS/global.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 </head>
 
 <body>
     <header class="sticky">
         <nav>
-            <a href="/index.html">
-                <img src="/img/white_vector_Antoine_leguay.svg" alt="">
+            <a href="./index.html">
+                <img src="./img/white_vector_Antoine_leguay.svg" alt="">
             </a>
             <div class="nav_item">
-                <a href="/index.html">Accueil</a>
-                <a href="/all_my_projects.html">Mes projets</a>
-                <a href="/about.html">À propos</a>
+                <a href="./index.html" class="animation_link">Accueil</a>
+                <a href="./all_my_projects.html" class="animation_link">Mes projets</a>
+                <a href="./about.html" class="animation_link">À propos</a>
             </div>
             <div class="burger_menu" id="burgerMenu">
-                <img id="iconBurger" src="icon/white_burger_menu.svg" alt="">
-                <img class="display_none" id="iconCross" src="icon/Cross.svg" alt="">
+                <span id="iconBurger">
+                    <span class="iconify icon_mobile white_icon" data-icon="charm:menu-hamburger"></span>
+                </span>
+                <span id="iconCross" class="display_none">
+                    <span class="iconify icon_mobile white_icon" data-icon="akar-icons:cross"></span>
+                </span>
             </div>
         </nav>
     </header>
     <div class="mobile_burger_menu display_none" id="mobileBurgerMenu">
-        <a href="index.html" class="headline">ACCUEIL</a>
-        <a href="my_projet.html" class="headline">MES PROJETS</a>
-        <a href="about.html" class="headline">À PROPOS</a>
+        <a href="./index.html" class="headline animation_link">ACCUEIL</a>
+        <a href="./all_my_projects.html" class="headline animation_link">MES PROJETS</a>
+        <a href="./about.html" class="headline animation_link">À PROPOS</a>
     </div>
     <main>
         <section class="welcome_section">
-            <img class="paint_kit" src="/img/paint-kit-dynamic-premium.png" alt="">
+            <img class="paint_kit" src="./img/paint-kit-dynamic-premium.png"
+                alt="Image représentant une palette de peinture avec le pinceau en 3D">
             <div class="element_welcome_section">
 
                 <h1>Bienvenue sur mon portfolio</h1>
@@ -48,78 +53,90 @@
                     Ornare ac laoreet purus urna sit ut turpis.</p>
                 <a class="dark_ghost_button" href="#project_section">
                     Défilement vers le bas
-                    <img src="/icon/Chevron_Down.svg" alt=""></a>
+                    <span class="iconify white" data-icon="material-symbols:keyboard-arrow-down-rounded"></span></a>
             </div>
         </section>
         <!-- -------------------------- -->
         <section class="recent_project_section" id="project_section">
             <h2>Mes projets récents</h2>
             <div class="cards">
-                <div class="card_piv">
-
-                    <div class="container_cover"></div> <!-- ICI IMAGE EN BACKGROUND DE LA DIV -->
+                <a class="card_piv" href="projet_piv.html">
+                    <div class="container_cover">
+                        <span class="iconify" data-icon="ic:baseline-remove-red-eye"></span>
+                    </div> <!-- ICI IMAGE EN BACKGROUND DE LA DIV -->
                     <div class="legend">
                         <p>Présentation d'dentité visuelle
                         </p>
                         <p>
                             <span>Personal Branding</span>
                         </p>
+
                     </div>
-                </div>
+                </a>
                 <!-- -------------------------- -->
                 <!-- -------------------------- -->
-                <div class="card_discobuzz">
-                    <div class="container_cover"></div> <!-- ICI IMAGE EN BACKGROUND DE LA DIV -->
+                <a class="card_discobuzz" href="projet_discobuzz.html">
+                    <div class="container_cover">
+                        <span class="iconify" data-icon="ic:baseline-remove-red-eye"></span>
+                    </div> <!-- ICI IMAGE EN BACKGROUND DE LA DIV -->
                     <div class="legend">
                         <p>UI & UX</p>
                         <p>
                             <span>Discobuzz</span>
                         </p>
                     </div>
-                </div>
+                </a>
                 <!-- -------------------------- -->
                 <!-- -------------------------- -->
-                <div class="card_piv">
-                    <div class="container_cover"></div> <!-- ICI IMAGE EN BACKGROUND DE LA DIV -->
+                <a class="card_piv" href="">
+                    <div class="container_cover">
+                        <span class="iconify" data-icon="ic:baseline-remove-red-eye"></span>
+                    </div> <!-- ICI IMAGE EN BACKGROUND DE LA DIV -->
                     <div class="legend">
                         <p>UI & UX</p>
                         <p>
                             <span>Discobuzz</span>
                         </p>
                     </div>
-                </div>
+                </a>
                 <!-- -------------------------- -->
                 <!-- -------------------------- -->
-                <div class="card_piv">
-                    <div class="container_cover"></div> <!-- ICI IMAGE EN BACKGROUND DE LA DIV -->
+                <a class="card_piv" href="">
+                    <div class="container_cover">
+                        <span class="iconify" data-icon="ic:baseline-remove-red-eye"></span>
+                    </div> <!-- ICI IMAGE EN BACKGROUND DE LA DIV -->
                     <div class="legend">
                         <p>UI & UX</p>
                         <p>
                             <span>Discobuzz</span>
                         </p>
                     </div>
-                </div>
+                </a>
             </div>
             <!-- -------------------------- -->
-            <a class="primary_button" href="/all_my_projects.html">
+            <a class="primary_button" href="./all_my_projects.html">
                 Voir plus
-                <img src="/icon/Arrow_Left_MD.svg" alt=""></a>
+                <span class="iconify black_icon black_icon"
+                    data-icon="material-symbols:arrow-right-alt-rounded"></span></a>
         </section>
-        <a class="ghost_button back_to_the_top" href="">
-            <img src="./icon/Black_Chevron_top.svg" alt=""></a>
+        <!-- <a class="ghost_button back_to_the_top" href="">
+            <img src="./icon/Black_Chevron_top.svg" alt=""></a> -->
     </main>
     <footer>
         <div class="footer_icons">
-            <a href="https://dribbble.com/"><img src="/icon/dribbble.svg" alt=""></a>
-            <a href="https://www.behance.net/toinoo"><img src="/icon/behance.svg" alt=""></a>
-            <a href="https://github.com/0xAntoDev"><img src="/icon/github.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/antoine-leguay-51899023a/"><img src="/icon/linkedin.svg" alt=""></a>
-            <a href="https://twitter.com/JustToinoo"><img src="/icon/twitter.svg" alt=""></a>
-            <a href="https://instagram.com/JustToinoo"><img src="/icon/instagram.svg" alt=""></a>
+            <a href="https://dribbble.com/"><span class="iconify" data-icon="ph:dribbble-logo"></span>
+            </a>
+            <a href="https://www.behance.net/toinoo"><span class="iconify" data-icon="eva:behance-fill"></span></a>
+            <a href="https://github.com/0xAntoDev"><span class="iconify" data-icon="ri:github-fill"></span></a>
+            <a href="https://www.linkedin.com/in/antoine-leguay-51899023a/"><span class="iconify"
+                    data-icon="mdi:linkedin"></span></a>
+            <a href="https://twitter.com/JustToinoo"><span class="iconify" data-icon="mdi:twitter"></span>
+            </a>
+            <a href="https://instagram.com/JustToinoo"><span class="iconify" data-icon="mdi:instagram"></span></a>
         </div>
         <p class="footer_text_layer">© 2023 Antoine LEGUAY. All Rights Reserved.</p>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="./js/global.js"></script>
 </body>
 
 </html>
