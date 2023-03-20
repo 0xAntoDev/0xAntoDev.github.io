@@ -161,11 +161,11 @@ html {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin-bottom: 2%;
+    margin-bottom: 1.5rem;
 }
 .navigation_social_media_link{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 .navigation_social_media_link>a>svg{
     font-size: 2rem;
