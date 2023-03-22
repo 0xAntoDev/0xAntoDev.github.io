@@ -69,7 +69,7 @@ header {
     align-items: center;
 }
 
-.mobile_burger_menu>.navigation_container>a:hover {
+.mobile_burger_menu>.navigation_container>.link_wrapper>a:hover {
     color: #0064FF;
     transition: all 300ms ease-in;
 }
@@ -253,7 +253,80 @@ nav {
     transform: scaleX(1);
 }
 
-/* Media Queries pour la nav bar */
+
+/* animation texte apparition */ 
+/* -------------------------- */
+.link_wrapper{
+overflow: hidden;
+}
+.link_wrapper>a{
+    display: inline-block;
+    animation-name:fade_in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes fade_in {
+    to{
+transform: translateY(0px);
+    }
+    from{
+        transform: translateY(50px);
+    }
+}
+/* Back to top */ 
+/* ----------- */ 
+
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 10;
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    color: #001a2e;
+}
+
+.progress-circular {
+    position: relative;
+    width: 114px;
+    height: 114px;
+}
+
+.progress-background {
+    fill: none;
+    stroke-width: 10px;
+    stroke: lightgray;
+}
+
+.progress-value {
+    fill: none;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 120; /* CHANGE THIS IN JS */
+    stroke: red;
+}
+
+
+/* Media Queries pour l
+a nav bar */
 /* ----------------------------- */
 
 @media screen and (min-width: 768px) {
