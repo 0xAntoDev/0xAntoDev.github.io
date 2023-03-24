@@ -453,6 +453,12 @@ a nav bar */
     font-size: 1.5rem;
 }
 
+.button_page_project{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
 /* --- Ghost_Button */
 /* ---------------- */
 

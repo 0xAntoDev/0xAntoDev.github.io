@@ -1,83 +1,144 @@
-:root {
-    --polygon: "M83.7064 2.89102C89.7324 -0.733716 97.2676 -0.73371 103.294 2.89103L177.391 47.4622C183.104 50.8984 186.598 57.0772 186.598 63.7436V154.256C186.598 160.923 183.104 167.102 177.391 170.538L103.294 215.109C97.2676 218.734 89.7324 218.734 83.7064 215.109L9.60866 170.538C3.89607 167.102 0.402267 160.923 0.402267 154.256V63.7436C0.402267 57.0772 3.89608 50.8984 9.60868 47.4622L83.7064 2.89102Z";
+.container_about {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+    gap: 4rem;
 }
 
-main {
-    padding: 1.5rem;
+.container_presentation {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.title_photo_antoine {
+.container_presentation > .title_only_mobile {
+    align-self: center;
+}
+
+.container_presentation > img {
+    border-radius: 9px;
+}
+
+.container_text_button {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
+}
+
+.title_only_computer {
+    display: none;
+}
+
+
+.container_clients, .container_software {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container_software_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* TODO: REVENIR ICI */
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.software_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1.5rem;
-}
-
-.hexagon {
-    display: flex;
-    width: 215px;
-    height: 224px;
-    background-color: red;
-    clip-path: path(var(--polygon));
-}
-
-.hexagon>img {
     width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    object-position: top 0 right 5px;
+    gap: 5px;
+    border: 2px solid #0D0D0D;
+    border-radius: 9px;
+    padding: 1rem 0rem;
 }
 
-.custom_hr {
-    border-top: 3px solid #0D0D0D;
+.software_card > svg{
+    font-size: 2rem;
 }
 
-.content_about {
+.container_clients_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.client_card {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    border: 2px solid #0D0D0D;
+    border-radius: 9px;
+    padding: 1rem 0rem;
 }
 
-p>span {
+.client_card > img {
+    border-radius: 50%;
+    width: 120px;
+}
+
+.client_card > .name_client {
     font-weight: bold;
 }
 
-.name_text_only_computer {
-    display: none;
+.client_card > .title_client {
+    font-size: 0.8rem;
 }
 
-.about_text_only_computer {
-    display: none;
-}
-
-@media screen and (min-width:768px) {
-    main {
-        flex-direction: row;
+@media screen and (min-width: 768px){
+    .container_about {
+        padding: 3rem 5%;
     }
 
-    .my_name {
+    .container_presentation {
+        flex-direction: row-reverse;
+        gap: 4rem;
+    }
+
+    .container_presentation > img {
+        max-width: 340px;
+        object-fit: cover;
+    }
+
+    .title_only_mobile {
         display: none;
     }
 
-    .name_text_only_computer {
+    .title_only_computer {
         display: block;
     }
 
-    .about_text_only_mobile {
-        display: none;
+    .container_software_cards {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .about_text_only_computer {
-        display: block;
+    .container_clients_cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+}
 
-    .title_photo_antoine {
-        align-items: flex-start;
-        width: 30%;
+@media screen and (min-width: 1024px){
+    .container_about {
+        padding: 3rem 10%;
+    }
+}
 
+@media screen and (min-width: 1440px) {
+    .container_about {
+        padding: 3rem 20%;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .container_about {
+        padding: 3rem 0rem;
+        width: 1700px;
+        margin: 0 auto;
     }
 }
