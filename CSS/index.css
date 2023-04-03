@@ -168,28 +168,27 @@ header {
         padding: 8% 8%;
     }
 
-
     .paint_kit {
         width: 50%;
     }
 
     .recent_project_section {
-        justify-content: center;
-        gap: 2.5rem;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2.5rem;
+        grid-row-gap: 2.5rem;
     }
 
     .card_piv,
     .card_discobuzz,
     .card_showreel,
     .card_dcrypto {
-        width: 40%;
+        width: 100%;
     }
 }
 
