@@ -12,7 +12,7 @@ main {
     max-width: 928px;
     max-height: 523px;
     aspect-ratio: 16 / 9;
-    background-image: url('../img/cover_youtube_thumbnail.jpg');
+    background-image: url('../img/Cover_thumbnail.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

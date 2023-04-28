@@ -48,7 +48,7 @@ main>h1 {
 }
 
 .card_youtube_thumbnail>.container_cover {
-    background-image: url('../img/cover_youtube_thumbnail.jpg');
+    background-image: url('../img/Cover_thumbnail.jpg');
 }
 
 .card_poster_f1>.container_cover {
@@ -76,7 +76,7 @@ main>h1 {
 }
 
 .card_youtube_thumbnail>.container_cover:hover {
-    background-image: radial-gradient(circle, rgba(37, 37, 37, 0.6) 0%, rgba(37, 37, 37, 0.6) 100%), url('../img/cover_youtube_thumbnail.jpg');
+    background-image: radial-gradient(circle, rgba(37, 37, 37, 0.6) 0%, rgba(37, 37, 37, 0.6) 100%), url('../img/Cover_thumbnail.jpg');
     transition: background-image 0.3s linear;
 }
 
